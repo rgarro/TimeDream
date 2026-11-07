@@ -8,7 +8,24 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.Spinner;
 
-
+/**
+ *            |    |    |
+ *           )_)  )_)  )_)
+ *          )___))___))___)\
+ *         )____)____)_____)\\
+ *      _____|____|____|____\\\__
+ * -------\                   /---------
+ *     ^^^^^ ^^^^^^^^^^^^^^^^^^^^^
+ *     ^^^^      ^^^^     ^^^    ^^
+ *           ^^^^      ^^^
+ * Sir Henry Morgan is de Lord of Talamanca
+ * Who bared record of the word of god, and of the
+ * testimony of Jesus Christ and of all things that he saw
+ *
+ *
+ *
+ * @author Rolando <rgarro@gmail.com>
+ */
 public class MainActivity extends Activity {
 
     @Override
