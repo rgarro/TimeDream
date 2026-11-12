@@ -3,6 +3,11 @@ package com.emptyart.rolando.timedream;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
+import android.view.View;
+import android.content.Intent;
+import android.widget.Spinner;
+import android.util.Base64;
 /**
  *            |    |    |
  *           )_)  )_)  )_)
@@ -24,10 +29,29 @@ import android.util.Log;
  */
 public class OpenApiActivity extends Activity {
 
+    private String getVars = "?geoLocation=9.6150185,-84.6260356&checkIn=2027-11-01&checkOut=2027-11-02";
+    private String lodgeServiceUrl = "https://api.openweathermap.org/data/4.0/onecall/timeline/1day?cnt=10&lat=51.5000&lon=-0.1000&start=1776596400&appid={API key}";
+    private String apiKey = "34gggbdfgdf6";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_open_api);
         //"https://api.openweathermap.org/data/4.0/onecall/timeline/1day?cnt=10&lat=51.5000&lon=-0.1000&start=1776596400&appid={API key}"
+        if (getIntent() != null) {
+            String surfSpot = getIntent().getStringExtra("surf_spot");
+            if (surfSpot == "Jaco"){
+                this.getVars = "&lat=9.6150185&lon=-84.6260356";
+            }
+            if (surfSpot == "Barranca"){
+
+            }
+            if (surfSpot == "Caldera"){
+
+            }
+            if (surfSpot == "Tivives"){
+
+            }
+        }
     }
 }
