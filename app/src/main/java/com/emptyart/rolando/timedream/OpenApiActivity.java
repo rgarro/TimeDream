@@ -3,11 +3,6 @@ package com.emptyart.rolando.timedream;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
-import android.view.View;
-import android.content.Intent;
-import android.widget.Spinner;
-import android.util.Base64;
 import android.widget.TextView;
 /**
  *            |    |    |
@@ -39,7 +34,6 @@ public class OpenApiActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_open_api);
-        //"https://api.openweathermap.org/data/4.0/onecall/timeline/1day?cnt=10&lat=51.5000&lon=-0.1000&start=1776596400&appid={API key}"
         if (getIntent() != null) {
             String surfSpot = getIntent().getStringExtra("surf_spot");
             if (surfSpot == "Jaco"){

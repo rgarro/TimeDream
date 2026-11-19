@@ -34,11 +34,11 @@ public class sendGetRequest {
             conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             //json
-            //conn.setRequestProperty("Content-Type", "application/json");
-            conn.setRequestProperty("Accept", "application/vnd.exp-hotel.v3+json");
-            conn.setRequestProperty("Partner-Transaction-Id", this.ids_incremental_index.toString());
-            conn.setRequestProperty("Key", "***ds3tf46ap3tuymfr");//key
-            conn.setRequestProperty("Authorization",this.travelApiAuthHeader);
+            conn.setRequestProperty("Content-Type", "application/json");
+            //conn.setRequestProperty("Accept", "application/vnd.exp-hotel.v3+json");
+            //conn.setRequestProperty("Partner-Transaction-Id", this.ids_incremental_index.toString());
+            //conn.setRequestProperty("Key", "***ds3tf46ap3tuymfr");//key
+            //conn.setRequestProperty("Authorization",this.travelApiAuthHeader);
 
             conn.setConnectTimeout(15000);
             conn.setReadTimeout(15000);
